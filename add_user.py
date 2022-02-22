@@ -66,15 +66,15 @@ def users_create_call():
 
 def user_create_single(uname, employee_ID, office, department, group):
     if employee_ID == "":
-        print("empty ID")
+        print("\033[1;31;40m empty ID | ID: " + employee_ID)
     elif uname == "":
-        print("invalid username")
+        print("\033[1;31;40m invalid username | ID: " + employee_ID)
     elif office == "":
-        print("empty office")
+        print("\033[1;31;40m empty office | ID: " + employee_ID)
     elif department == "":
-        print("empty department")
+        print("\033[1;31;40m empty department | ID: " + employee_ID)
     elif group == "":
-        print("empty group")
+        print("\033[1;31;40m empty group | ID: " + employee_ID)
     elif group == "office":
         os.system("sudo mkdir " + __DEFAULT_USER_DIR + "/" + department)
         os.system("sudo groupadd " + group)
@@ -84,7 +84,7 @@ def user_create_single(uname, employee_ID, office, department, group):
                   " -p password" +
                   " -f 0 -m" +
                   " -g " + group)
-        print("Created account for user: " + uname + " | ID: " + employee_ID)
+        print("\033[1;32;40m Created account for user: " + uname + " | ID: " + employee_ID)
     else:
         os.system("sudo mkdir " + __DEFAULT_USER_DIR + "/" + department)
         os.system("sudo groupadd " + group)
@@ -94,7 +94,7 @@ def user_create_single(uname, employee_ID, office, department, group):
                   " -p password" +
                   " -f 0 -m" +
                   " -g " + group)
-        print("Created account for user: " + uname + " | ID: " + employee_ID)
+        print("\033[1;32;40m Created account for user: " + uname + " | ID: " + employee_ID)
 
 def main():
     file_open()
