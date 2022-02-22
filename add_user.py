@@ -66,15 +66,15 @@ def users_create_call():
 
 def user_create_single(uname, employee_ID, office, department, group):
     if employee_ID == "":
-        print("\033[1;31;40m empty ID | ID: " + employee_ID)
+        print("\033[1;31;40m empty ID | ID: " + employee_ID + "\033[0;33;40m")
     elif uname == "":
-        print("\033[1;31;40m invalid username | ID: " + employee_ID)
+        print("\033[1;31;40m invalid username | ID: " + employee_ID + "\033[0;33;40m")
     elif office == "":
-        print("\033[1;31;40m empty office | ID: " + employee_ID)
+        print("\033[1;31;40m empty office | ID: " + employee_ID + "\033[0;33;40m")
     elif department == "":
-        print("\033[1;31;40m empty department | ID: " + employee_ID)
+        print("\033[1;31;40m empty department | ID: " + employee_ID + "\033[0;33;40m")
     elif group == "":
-        print("\033[1;31;40m empty group | ID: " + employee_ID)
+        print("\033[1;31;40m empty group | ID: " + employee_ID + "\033[0;33;40m")
     elif group == "office":
         os.system("sudo mkdir " + __DEFAULT_USER_DIR + "/" + department)
         os.system("sudo groupadd " + group)
@@ -84,7 +84,7 @@ def user_create_single(uname, employee_ID, office, department, group):
                   " -p password" +
                   " -f 0 -m" +
                   " -g " + group)
-        print("\033[1;32;40m Created account for user: " + uname + " | ID: " + employee_ID)
+        print("\033[1;32;40m Created account for user: " + uname + " | ID: " + employee_ID + "\033[0;33;40m")
     else:
         os.system("sudo mkdir " + __DEFAULT_USER_DIR + "/" + department)
         os.system("sudo groupadd " + group)
@@ -94,7 +94,7 @@ def user_create_single(uname, employee_ID, office, department, group):
                   " -p password" +
                   " -f 0 -m" +
                   " -g " + group)
-        print("\033[1;32;40m Created account for user: " + uname + " | ID: " + employee_ID)
+        print("\033[1;32;40m Created account for user: " + uname + " | ID: " + employee_ID + "\033[0;33;40m")
 
 def main():
     file_open()
