@@ -100,5 +100,6 @@ def main():
     file_open()
     file_parse()
     users_create_call()
+    print("\033[2;31;40mScript has finished:)\033[0;37;40m")
 
 main()
