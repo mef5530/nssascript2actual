@@ -10,7 +10,7 @@ __FILE_ROWS = []
 
 __DATA = []
 
-__DEFAULT_USER_DIR = ""
+__DEFAULT_USER_DIR = "/home"
 
 def file_open():
     with open(__DEFAULT_FILEPATH, 'r') as file:
