@@ -1,0 +1,265 @@
+Script started on 2021-06-05 21:28:26-07:00
+]777;notify;Command completed;ssh gpavks@solace.ist.rit.edu]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ ./add_user.py 
+[3J[H[2J
+Adding new users to the system.
+Please Note: The default password for new users is [92mpassword[0m.
+For testing purposes. Change the password to [92m1$4pizz@[0m.
+
+Processing employee ID 6297341.		[92mjjohnson1[0m added to system.
+
+Processing employee ID 5551209.		[92mnrichardson1[0m added to system.
+
+Processing employee ID 7329181.		[92mnperkins1[0m added to system.
+
+Cannot process employee ID 2323231.	[91mNot a valid group[0m.
+
+Processing employee ID 1653001.		[92msoneill1[0m added to system.
+
+Cannot process employee ID 1653009.	[91mInsufficient data[0m.
+
+Cannot process employee ID 2322235.	[91mNot a valid group[0m.
+
+]777;notify;Command completed;./add_user.py ]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+systemd-coredump:x:999:997:systemd Core Dumper:/:/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+polkitd:x:998:996:User for polkitd:/:/sbin/nologin
+geoclue:x:997:995:User for geoclue:/var/lib/geoclue:/sbin/nologin
+gluster:x:996:994:GlusterFS daemons:/run/gluster:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/proc:/sbin/nologin
+pulse:x:171:171:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+libstoragemgmt:x:995:991:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+unbound:x:994:989:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+chrony:x:993:988::/var/lib/chrony:/sbin/nologin
+setroubleshoot:x:992:986::/var/lib/setroubleshoot:/sbin/nologin
+pipewire:x:991:985:PipeWire System Daemon:/var/run/pipewire:/sbin/nologin
+saslauth:x:990:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+dnsmasq:x:983:983:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+clevis:x:982:981:Clevis Decryption Framework unprivileged user:/var/cache/clevis:/sbin/nologin
+cockpit-ws:x:981:979:User for cockpit web service:/nonexisting:/sbin/nologin
+cockpit-wsinstance:x:980:978:User for cockpit-ws instances:/nonexisting:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+sssd:x:979:977:User for sssd:/:/sbin/nologin
+flatpak:x:978:976:User for flatpak system helper:/:/sbin/nologin
+colord:x:977:975:User for colord:/var/lib/colord:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+gnome-initial-setup:x:976:974::/run/gnome-initial-setup/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+rngd:x:975:973:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+student:x:1000:1000:Garret Arcoraci:/home/student:/bin/bash
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+jjohnson:x:1001:1003:6297341:/home/security/jjohnson:/bin/bash
+nrichardson:x:1002:1004:5551209:/home/ceo/nrichardson:/bin/csh
+nperkins:x:1003:1005:7329181:/home/ceo/nperkins:/bin/csh
+soneill:x:1004:1006:1653001:/home/security/soneill:/bin/bash
+jjohnson1:x:1005:1007:6297341:/home/security/jjohnson1:/bin/bash
+nrichardson1:x:1006:1008:5551209:/home/ceo/nrichardson1:/bin/csh
+nperkins1:x:1007:1009:7329181:/home/ceo/nperkins1:/bin/csh
+soneill1:x:1008:1010:1653001:/home/security/soneill1:/bin/bash
+]777;notify;Command completed;cat /etc/passwd]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ ./remove_users.py 
+jjohnson        Removed from system.
+nrichardson     Removed from system.
+nperkins        Removed from system.
+soneill         Removed from system.
+jjohnson1       Removed from system.
+nrichardson1    Removed from system.
+nperkins1       Removed from system.
+soneill1        Removed from system.
+]777;notify;Command completed;./remove_users.py ]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ ./remove_users.py [3Pcat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+systemd-coredump:x:999:997:systemd Core Dumper:/:/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+polkitd:x:998:996:User for polkitd:/:/sbin/nologin
+geoclue:x:997:995:User for geoclue:/var/lib/geoclue:/sbin/nologin
+gluster:x:996:994:GlusterFS daemons:/run/gluster:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/proc:/sbin/nologin
+pulse:x:171:171:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+libstoragemgmt:x:995:991:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+unbound:x:994:989:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+chrony:x:993:988::/var/lib/chrony:/sbin/nologin
+setroubleshoot:x:992:986::/var/lib/setroubleshoot:/sbin/nologin
+pipewire:x:991:985:PipeWire System Daemon:/var/run/pipewire:/sbin/nologin
+saslauth:x:990:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+dnsmasq:x:983:983:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+clevis:x:982:981:Clevis Decryption Framework unprivileged user:/var/cache/clevis:/sbin/nologin
+cockpit-ws:x:981:979:User for cockpit web service:/nonexisting:/sbin/nologin
+cockpit-wsinstance:x:980:978:User for cockpit-ws instances:/nonexisting:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+sssd:x:979:977:User for sssd:/:/sbin/nologin
+flatpak:x:978:976:User for flatpak system helper:/:/sbin/nologin
+colord:x:977:975:User for colord:/var/lib/colord:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+gnome-initial-setup:x:976:974::/run/gnome-initial-setup/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+rngd:x:975:973:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+student:x:1000:1000:Garret Arcoraci:/home/student:/bin/bash
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+]777;notify;Command completed;cat /etc/passwd]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ clear
+[3J[H[2J]777;notify;Command completed;clear]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ ./add_user.py 
+[3J[H[2J
+Adding new users to the system.
+Please Note: The default password for new users is [92mpassword[0m.
+For testing purposes. Change the password to [92m1$4pizz@[0m.
+
+Processing employee ID 6297341.		[92mjjohnson[0m added to system.
+
+Processing employee ID 5551209.		[92mnrichardson[0m added to system.
+
+Processing employee ID 7329181.		[92mnperkins[0m added to system.
+
+Cannot process employee ID 2323231.	[91mNot a valid group[0m.
+
+Processing employee ID 1653001.		[92msoneill[0m added to system.
+
+Cannot process employee ID 1653009.	[91mInsufficient data[0m.
+
+Cannot process employee ID 2322235.	[91mNot a valid group[0m.
+
+]777;notify;Command completed;./add_user.py ]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ ./add_user.py 
+[3J[H[2J
+Adding new users to the system.
+Please Note: The default password for new users is [92mpassword[0m.
+For testing purposes. Change the password to [92m1$4pizz@[0m.
+
+Processing employee ID 6297341.		[92mjjohnson1[0m added to system.
+
+Processing employee ID 5551209.		[92mnrichardson1[0m added to system.
+
+Processing employee ID 7329181.		[92mnperkins1[0m added to system.
+
+Cannot process employee ID 2323231.	[91mNot a valid group[0m.
+
+Processing employee ID 1653001.		[92msoneill1[0m added to system.
+
+Cannot process employee ID 1653009.	[91mInsufficient data[0m.
+
+Cannot process employee ID 2322235.	[91mNot a valid group[0m.
+
+]777;notify;Command completed;./add_user.py ]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ ./add_user.py [9Pclear./add_user.py 
+[3J[H[2J
+Adding new users to the system.
+Please Note: The default password for new users is [92mpassword[0m.
+For testing purposes. Change the password to [92m1$4pizz@[0m.
+
+Processing employee ID 6297341.		[92mjjohnson2[0m added to system.
+
+Processing employee ID 5551209.		[92mnrichardson2[0m added to system.
+
+Processing employee ID 7329181.		[92mnperkins2[0m added to system.
+
+Cannot process employee ID 2323231.	[91mNot a valid group[0m.
+
+Processing employee ID 1653001.		[92msoneill2[0m added to system.
+
+Cannot process employee ID 1653009.	[91mInsufficient data[0m.
+
+Cannot process employee ID 2322235.	[91mNot a valid group[0m.
+
+]777;notify;Command completed;./add_user.py ]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ ./add_user.py [9Pclearat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+systemd-coredump:x:999:997:systemd Core Dumper:/:/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+polkitd:x:998:996:User for polkitd:/:/sbin/nologin
+geoclue:x:997:995:User for geoclue:/var/lib/geoclue:/sbin/nologin
+gluster:x:996:994:GlusterFS daemons:/run/gluster:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/proc:/sbin/nologin
+pulse:x:171:171:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+libstoragemgmt:x:995:991:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+unbound:x:994:989:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+chrony:x:993:988::/var/lib/chrony:/sbin/nologin
+setroubleshoot:x:992:986::/var/lib/setroubleshoot:/sbin/nologin
+pipewire:x:991:985:PipeWire System Daemon:/var/run/pipewire:/sbin/nologin
+saslauth:x:990:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+dnsmasq:x:983:983:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+clevis:x:982:981:Clevis Decryption Framework unprivileged user:/var/cache/clevis:/sbin/nologin
+cockpit-ws:x:981:979:User for cockpit web service:/nonexisting:/sbin/nologin
+cockpit-wsinstance:x:980:978:User for cockpit-ws instances:/nonexisting:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+sssd:x:979:977:User for sssd:/:/sbin/nologin
+flatpak:x:978:976:User for flatpak system helper:/:/sbin/nologin
+colord:x:977:975:User for colord:/var/lib/colord:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+gnome-initial-setup:x:976:974::/run/gnome-initial-setup/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+rngd:x:975:973:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+student:x:1000:1000:Garret Arcoraci:/home/student:/bin/bash
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+jjohnson:x:1001:1003:6297341:/home/security/jjohnson:/bin/bash
+nrichardson:x:1002:1004:5551209:/home/ceo/nrichardson:/bin/csh
+nperkins:x:1003:1005:7329181:/home/ceo/nperkins:/bin/csh
+soneill:x:1004:1006:1653001:/home/security/soneill:/bin/bash
+jjohnson1:x:1005:1007:6297341:/home/security/jjohnson1:/bin/bash
+nrichardson1:x:1006:1008:5551209:/home/ceo/nrichardson1:/bin/csh
+nperkins1:x:1007:1009:7329181:/home/ceo/nperkins1:/bin/csh
+soneill1:x:1008:1010:1653001:/home/security/soneill1:/bin/bash
+jjohnson2:x:1009:1011:6297341:/home/security/jjohnson2:/bin/bash
+nrichardson2:x:1010:1012:5551209:/home/ceo/nrichardson2:/bin/csh
+nperkins2:x:1011:1013:7329181:/home/ceo/nperkins2:/bin/csh
+soneill2:x:1012:1014:1653001:/home/security/soneill2:/bin/bash
+]777;notify;Command completed;cat /etc/passwd]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ clear
+[3J[H[2J]777;notify;Command completed;clear]0;student@gpavks:~/scripts/script02]7;file://gpavks/home/student/scripts/script02[student@gpavks script02]$ exit
+
+Script done on 2021-06-05 21:30:54-07:00
