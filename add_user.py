@@ -78,8 +78,8 @@ def user_create_single(uname, employee_ID, office, department, group):
     elif group == "office":
         os.system("sudo mkdir " + __DEFAULT_USER_DIR + "/" + department)
         os.system("sudo groupadd " + group)
-        print("sudo adduser " + uname +
-                  "-d " + __DEFAULT_USER_DIR + "/" + department + "/" + uname +
+        os.system("sudo adduser " + uname +
+                  " -d " + __DEFAULT_USER_DIR + "/" + department + "/" + uname +
                   " -s /bin/csh" +
                   " -p password" +
                   " -f 0 -m" +
@@ -88,8 +88,8 @@ def user_create_single(uname, employee_ID, office, department, group):
     else:
         os.system("sudo mkdir " + __DEFAULT_USER_DIR + "/" + department)
         os.system("sudo groupadd " + group)
-        print("sudo adduser " + uname +
-                  "-d " + __DEFAULT_USER_DIR + "/" + department + "/" + uname +
+        os.system("sudo adduser " + uname +
+                  " -d " + __DEFAULT_USER_DIR + "/" + department + "/" + uname +
                   " -s /bin/sh" +
                   " -p password" +
                   " -f 0 -m" +
